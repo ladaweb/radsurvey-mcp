@@ -10,6 +10,8 @@ Instead of writing SQL or digging through survey spreadsheets, an inspector can 
 The assistant calls a small set of well-defined tools, and the server answers from the survey database.
 
 > **Data note:** the bundled dataset is fully synthetic: a fictional facility with simulated point sources. Estimates are for planning only and are not a substitute for radiation protection review or real-time dosimetry.
+>
+> **Example input and output** 
 <img width="562" height="197" alt="image" src="https://github.com/user-attachments/assets/9c8027a4-61da-4931-b9ac-c0d06e7c9712" />
 
 ## Why
