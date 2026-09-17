@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "radsurvey": {
+      "command": "/ABSOLUTE/PATH/TO/radsurvey-mcp/.venv/bin/python",
+      "args": ["-m", "radsurvey_mcp.server"]
+    }
+  }
+}

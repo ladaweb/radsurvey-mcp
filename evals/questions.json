@@ -1,0 +1,32 @@
+[
+  {
+    "id": "hotspot-hcc",
+    "question": "Where is the hottest spot in the Hot Cell Corridor right now?",
+    "expected_tools": ["area_hotspots"],
+    "must_mention_any": ["5.0", "5 m", "(5"]
+  },
+  {
+    "id": "list-areas",
+    "question": "Which areas have survey data, and which one is posted as a High Radiation Area?",
+    "expected_tools": ["list_areas"],
+    "must_mention_any": ["Hot Cell Corridor", "HCC-01"]
+  },
+  {
+    "id": "threshold",
+    "question": "Are there any readings above 150 uSv/h anywhere? How many?",
+    "expected_tools": ["find_readings_above"],
+    "must_mention_any": ["HCC-01", "Hot Cell"]
+  },
+  {
+    "id": "stay-time",
+    "question": "I need to spend 3 hours in the Reactor Hall and my dose budget is 100 uSv. Am I OK?",
+    "expected_tools": ["estimate_stay_time"],
+    "must_mention_any": ["estimate", "planning"]
+  },
+  {
+    "id": "unknown-area",
+    "question": "What were the hotspots in the Turbine Building last month?",
+    "expected_tools": [],
+    "must_mention_any": ["no ", "not ", "doesn't", "does not", "isn't", "unavailable"]
+  }
+]
